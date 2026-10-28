@@ -1,0 +1,39 @@
+{
+  "schema": "TEEDUP map lock register v1",
+  "governance": "Formally locked by user instruction after user visual and functional acceptance",
+  "version": "COM-MAP-001 v0.8",
+  "scope": "Ontario + Florida + South Carolina commercial planning",
+  "certification": "South Carolina formal CAC-001/SOI-001 certification pending",
+  "accepted_source_commit": "6f9cc73b5aaae80cf01614948dcbb1ec0b0ed48c",
+  "accepted_blob": "0029a306ac210669780395573f892ad9311cc2d2",
+  "locked_html_sha256": "280b525e9636190f72c311587fd9f7015737c46b50d022d83b116d1a03bb0252",
+  "locked_paths": [
+    "COM-MAP-001_v0.8_LOCKED.html",
+    "review-v08.html"
+  ],
+  "live_url": "https://johnapacione-web.github.io/teedup-market-map/COM-MAP-001_v0.8_LOCKED.html",
+  "existing_live_url": "https://johnapacione-web.github.io/teedup-market-map/review-v08.html",
+  "legacy_master": {
+    "path": "index.html",
+    "version": "COM-MAP-001 v0.5",
+    "git_blob": "34abbf3ca6eb4ba436917f72e67bd9f29a75082b",
+    "live_sha256": "175cf2a43e39ef71a778d3d9269240c0588336d2512091c00e9afc0daaeb9017"
+  },
+  "preservation_rules": [
+    "Never overwrite locked HTML, accepted data, interaction histories, geography or comparator values.",
+    "Never substitute a picture or screenshot for the functional HTML map.",
+    "All future changes must use separately versioned derivative paths and repeat source, visual and interactive regression.",
+    "Preserve both current live URLs; never silently redirect or replace them with later maps.",
+    "The preserved HTML still contains its review wording; this external acceptance record locks those exact tested bytes without cosmetic edits."
+  ],
+  "access": {
+    "public": true,
+    "login_required": false,
+    "external_runtime_dependencies": [
+      "unpkg.com Leaflet 1.9.4 and MarkerCluster 1.5.3",
+      "OpenStreetMap tile servers"
+    ],
+    "guarantee": "Exact Git content is recoverable by commit/blob; ongoing service availability is not guaranteed.",
+    "enforcement": "Integrity workflow detects byte changes. Repository/branch write protection has not been configured."
+  }
+}

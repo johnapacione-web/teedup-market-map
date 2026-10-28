@@ -1,0 +1,20 @@
+name: Locked map integrity
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-locked-map-bytes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify immutable accepted maps
+        shell: bash
+        run: |
+          sha256sum --check <<'HASHES'
+          175cf2a43e39ef71a778d3d9269240c0588336d2512091c00e9afc0daaeb9017  index.html
+          280b525e9636190f72c311587fd9f7015737c46b50d022d83b116d1a03bb0252  review-v08.html
+          280b525e9636190f72c311587fd9f7015737c46b50d022d83b116d1a03bb0252  COM-MAP-001_v0.8_LOCKED.html
+          HASHES
