@@ -1,0 +1,74 @@
+{
+  "status": "PASS for tested desktop integration scopes; separate review only",
+  "candidate_commit": "6f9cc73b5aaae80cf01614948dcbb1ec0b0ed48c",
+  "candidate_blob": "0029a306ac210669780395573f892ad9311cc2d2",
+  "locked_master_blob": "34abbf3ca6eb4ba436917f72e67bd9f29a75082b",
+  "locked_master_recovered_sha256": "e974b66173c85f20faac988b2e07b08a593f2eebd93ff20003f5f898b48b07b6",
+  "master_preservation": "index.html unchanged; repository blob equals recovered v0.5 bytes plus one trailing newline",
+  "source_regression": {
+    "legacy_records": 1938,
+    "legacy_territories": 16,
+    "legacy_service_areas": 66,
+    "legacy_history_entries": 37,
+    "legacy_record_objects_equal": true,
+    "legacy_comparator_objects_equal": true,
+    "legacy_popup_history_functions_exact": true,
+    "SC_records": 383,
+    "SC_territory_service_area_consistency": true
+  },
+  "interactive_tests": {
+    "legacy_market_territory_service_filters": {
+      "markets": 2,
+      "territories": 16,
+      "service_areas": 66,
+      "all_counts_match": true
+    },
+    "legacy_comparator": {
+      "periods": 13,
+      "all_display_rows_match": true
+    },
+    "legacy_profiles": [
+      "Ariss Valley",
+      "Ayren Links",
+      "Summit Golf",
+      "Cataraqui"
+    ],
+    "legacy_profile_text_matches": true,
+    "Ontario_relationship_state_counts": [
+      46,
+      19,
+      625
+    ],
+    "SC_territory_counts": [
+      157,
+      46,
+      82,
+      61,
+      37
+    ],
+    "SC_service_area_filters": 141,
+    "SC_filter_failures": 0,
+    "SC_marker_tooltip_and_click_profile": "PASS — Lakes Cypress At Arrowhead",
+    "SC_search_popup_bounds": "PASS — popup x=625..1066, map x=330..1363, popup y=58..455 inside viewport",
+    "reset": "tested throughout paired checks"
+  },
+  "visual_tests": {
+    "hosted_basemap": "PASS — actual tiles rendered in Cloud Browser",
+    "Ontario": "PASS — side-by-side screenshot inspection; 25 visible tile URLs and absolute positions identical; marker/cluster text and positions identical",
+    "Florida": "PASS — side-by-side screenshot inspection; 20 loaded tile URL/transform pairs identical; marker/cluster text and positions identical after canonical ordering",
+    "SC_labels": "PASS at tested statewide and zoomed views: 5 statewide territory labels; 56 visible SC labels at closer zoom; zero label-to-label rectangle overlaps",
+    "legacy_label_overlap": "Existing v0.5 low-zoom label crowding retained; not represented as corrected",
+    "scope": "Desktop Cloud Browser; representative profile/history interaction checks plus full source-object preservation, not manual inspection of every marker"
+  },
+  "SC_status": {
+    "commercial": "Approved planning market",
+    "formal": "CAC-001/SOI-001 certification pending",
+    "scenario_profile_REU": 345.8333333333333,
+    "annual_EREU_sum": 3206.12319193064,
+    "scenario_ledger_rows": 384,
+    "mapped_source_records": 383,
+    "supplemental_row": "Proposed Mount Vintage Independent nine is in scenario accounting ledger but is not introduced as an additional mapped source record",
+    "certification_gates": "Facility identity/APR, coastal geographic acceptance and full SOI production certification remain separate"
+  },
+  "publication": "Only review-v08.html added/updated. Locked homepage not replaced."
+}
