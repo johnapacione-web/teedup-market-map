@@ -142,7 +142,7 @@ function apply(){
  if(ok){cluster.addLayer(m);shown.push(m);b[r.relationship]=(b[r.relationship]||0)+1;}});
  document.getElementById('visibleCount').textContent=shown.length;
  document.getElementById('breakdown').innerHTML=ALL_STATES.map(s=>`${esc(s)}: <b>${b[s]||0}</b>`).join('<br>');
- if(query&&shown.length===1){map.setView(shown[0].getLatLng(),12);shown[0].openPopup();}
+ if(query&&shown.length===1){if(shown[0].__data.market==='South Carolina')map.setView(shown[0].getLatLng(),12,{reset:true});else map.setView(shown[0].getLatLng(),12);shown[0].openPopup();}
 }
 document.getElementById('search').addEventListener('input',apply);
 marketSel.addEventListener('change',()=>{populateTerr();populateSA();apply(); const mk=marketSel.value; if(mk==='South Carolina') map.setView([33.9,-80.8],7,{reset:true}); else if(mk==='Florida') map.setView([27.8,-81.7],6); else if(mk==='Ontario') map.setView([46.4,-84.4],5); else map.setView([36.0,-82.5],4);});
